@@ -30,8 +30,6 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(realpath(__DIR__.'/../resources/stubs'), 'aksara');
-        $this->publishes([
-            __DIR__.'/../resources/stubs' => resource_path('stubs'),
-        ]);
+        $this->publishes([__DIR__.'/../resources/stubs' => resource_path('stubs')], 'aksara-service-repository-generator');
     }
 }
