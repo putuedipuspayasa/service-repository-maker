@@ -48,7 +48,7 @@ class RepositoryMakerCommand extends Command
                 lcfirst(str_replace('Repository', '', $name)),
                 str_replace('Repository', '', $name)
             ],
-            file_get_contents(resource_path('stubs/Repository.stub'))
+            file_get_contents(__DIR__.'/../resources/stubs/Repository.stub')
         );
 
         $path   = app_path('/Repositories');

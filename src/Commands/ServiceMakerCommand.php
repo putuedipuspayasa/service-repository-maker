@@ -49,7 +49,9 @@ class ServiceMakerCommand extends Command
                 lcfirst(str_replace('Service', '', $name)),
                 str_replace('Service', '', $name)
             ],
-            file_get_contents(resource_path('stubs/Service.stub'))
+            
+            file_get_contents(__DIR__.'/../resources/stubs/Service.stub')
+            // file_get_contents(resource_path('stubs/Service.stub'))
         );
 
         $path   = app_path('/Services');
