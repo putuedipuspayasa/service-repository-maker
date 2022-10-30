@@ -1,7 +1,8 @@
 # laravel-service-repository-maker
 Generator service and repository pattern for Laravel
 
-## Quick Start
+
+# Quick Start
 
 **Step 1**: Install the package
 
@@ -15,7 +16,8 @@ $ composer require aksara/service-repository-maker
 $ php artisan vendor:publish --tag='aksara-service-repository-stubs'
 ```
 
-### Make Service and Repository
+
+## Make Service and Repository
 
 **Make Service**: this will directly create a `Service` file in `app/Services` folder
 
@@ -29,5 +31,6 @@ $ php artisan make:service {service name}
 $ php artisan make:repository {repository name}
 ```
 
-#### Sample CRUD with Service and Repositoru Pattern
+
+# Sample CRUD with Service and Repository Pattern
 [https://github.com/putuedipuspayasa/laravel-crud-with-service-and-repository-pattern](https://github.com/putuedipuspayasa/laravel-crud-with-service-and-repository-pattern)
